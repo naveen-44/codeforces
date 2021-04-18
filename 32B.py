@@ -11,4 +11,5 @@ while k < len(s):
         else:
             ans += '2'
         k += 2
+
 print(ans)
