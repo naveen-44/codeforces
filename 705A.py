@@ -1,15 +1,12 @@
-def gcd(a,b):
-    if a == 0:
-        return b
-    return gcd(b%a,a)
-nums =[]
-for i in range(4):
-    n = int(input())
-    nums.append(n)
-nums = sorted(nums)
-print(nums)
-N = int(input())
-ans = []
-for i in range(N+1):
-    for j in range(4):
-        print(nums[j])
+n = int(input())
+s = ""
+for i in range(n):
+    if(i==0):
+        s = "I hate "
+    elif(i%2==1):
+        s += "that I love "
+    else:
+        s += "that I hate "
+ 
+s+= "it"
+print(s)
